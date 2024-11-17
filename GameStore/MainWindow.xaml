@@ -40,7 +40,7 @@
             <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Text="Товары" FontSize="25" Foreground="Green" HorizontalAlignment="Left" Margin="171,0,0,0"/>
+        <TextBlock Text="Товары" FontSize="25" Foreground="Green" HorizontalAlignment="Center"/>
         <TextBlock Text="Корзина" FontSize="25" Foreground="Green" HorizontalAlignment="Center" Grid.Column="1"/>
 
 
