@@ -45,7 +45,7 @@
 
 
         <Border BorderBrush="Green" BorderThickness="5" Grid.Row="1" Grid.ColumnSpan="2"/>
-        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Margin="5,5,5,5" Grid.Row="1" Grid.ColumnSpan="2">
+        <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Margin="5,5,5,5" Grid.Row="1" >
             <ItemsControl ItemsSource="{Binding Games}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>

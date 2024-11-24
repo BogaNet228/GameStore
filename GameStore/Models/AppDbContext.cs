@@ -26,7 +26,18 @@ namespace GameStore.Models
                 new Game { Id = 7, Title = "Hades", Price = 799.99m, ImagePath = "Images/hades.jpg" },
                 new Game { Id = 8, Title = "Control", Price = 1499.99m, ImagePath = "Images/control.jpg" },
                 new Game { Id = 9, Title = "Resident Evil Village", Price = 3999.99m, ImagePath = "Images/re_village.jpg" },
-                new Game { Id = 10, Title = "God of War", Price = 3999.99m, ImagePath = "Images/godofwar.jpeg" }
+                new Game { Id = 10, Title = "God of War", Price = 3999.99m, ImagePath = "Images/godofwar.jpeg" },
+
+                new Game { Id = 11, Title = "Elden Ring", Price = 3499.99m, ImagePath = "Images/elden_ring.jpeg" },
+                new Game { Id = 12, Title = "Hollow Knight", Price = 699.99m, ImagePath = "Images/hollow_knight.jpg" },
+                new Game { Id = 13, Title = "Minecraft", Price = 2599.99m, ImagePath = "Images/minecraft.jpg" },
+                new Game { Id = 14, Title = "Terraria", Price = 799.99m, ImagePath = "Images/terraria.png" },
+                new Game { Id = 15, Title = "Stardew Valley", Price = 599.99m, ImagePath = "Images/stardew_valley.jpg" },
+                new Game { Id = 16, Title = "Among Us", Price = 499.99m, ImagePath = "Images/among_us.jpg" },
+                new Game { Id = 17, Title = "The Last of Us Part II", Price = 3499.99m, ImagePath = "Images/last_of_us_2.jpg" },
+                new Game { Id = 18, Title = "Grand Theft Auto V", Price = 1999.99m, ImagePath = "Images/gta5.jpg" },
+                new Game { Id = 19, Title = "Portal 2", Price = 499.99m, ImagePath = "Images/portal2.jpg" },
+                new Game { Id = 20, Title = "Sekiro: Shadows Die Twice", Price = 2999.99m, ImagePath = "Images/sekiro.jpg" }
 
             );
             modelBuilder.Entity<Key>().HasData(
@@ -74,7 +85,45 @@ namespace GameStore.Models
                 // God of War
                 new Key { Id = 24, Code = "GOW-KEY-123", GameId = 10 },
                 new Key { Id = 25, Code = "GOW-KEY-456", GameId = 10 },
-                new Key { Id = 26, Code = "GOW-KEY-789", GameId = 10 }
+                new Key { Id = 26, Code = "GOW-KEY-789", GameId = 10 },
+
+                //Elden Ring
+                new Key { Id = 27, Code = "ELDEN-KEY-123", GameId = 11 },
+                new Key { Id = 28, Code = "ELDEN-KEY-456", GameId = 11 },
+
+                //Hollow Knight
+                new Key { Id = 29, Code = "HOLLOW-KEY-123", GameId = 12 },
+                new Key { Id = 30, Code = "HOLLOW-KEY-456", GameId = 12 },
+
+                //Minecraft
+                new Key { Id = 31, Code = "MINECRAFT-KEY-123", GameId = 13 },
+
+                //Terraria
+                new Key { Id = 32, Code = "TERRARIA-KEY-123", GameId = 14 },
+                new Key { Id = 33, Code = "TERRARIA-KEY-456", GameId = 14 },
+
+                //Stardew Valley
+                new Key { Id = 34, Code = "STARDEW-KEY-123", GameId = 15 },
+
+                //Among Us
+                new Key { Id = 35, Code = "AMONGUS-KEY-123", GameId = 16 },
+
+                //The Last Of Us 2
+                new Key { Id = 36, Code = "LASTOFUS2-KEY-123", GameId = 17 },
+                new Key { Id = 37, Code = "LASTOFUS2-KEY-456", GameId = 17 },
+
+                //GTA 5
+                new Key { Id = 38, Code = "GTA5-KEY-123", GameId = 18 },
+                new Key { Id = 39, Code = "GTA5-KEY-456", GameId = 18 },
+
+                //Portal 2
+                new Key { Id = 40, Code = "PORTAL2-KEY-123", GameId = 19 },
+                new Key { Id = 41, Code = "PORTAL2-KEY-456", GameId = 19 },
+
+                //Sekiro: Shadows Die Twice
+                new Key { Id = 42, Code = "SEKIRO-KEY-123", GameId = 20 },
+                new Key { Id = 43, Code = "SEKIRO-KEY-456", GameId = 20 },
+                new Key { Id = 44, Code = "SEKIRO-KEY-789", GameId = 20 }
             );
         }
     }
