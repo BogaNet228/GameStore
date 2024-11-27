@@ -37,7 +37,7 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="250"/>
         </Grid.ColumnDefinitions>
 
         <TextBlock Text="Товары" FontSize="25" Foreground="Green" HorizontalAlignment="Center"/>
@@ -95,8 +95,8 @@
                                         <ColumnDefinition Width="60"/>
                                     </Grid.ColumnDefinitions>
                                     <StackPanel Orientation="Vertical">
-                                        <TextBlock Text="{Binding Game.Title}" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center"/>
-                                        <TextBlock Text="{Binding Game.Price, StringFormat=C, ConverterCulture=RU-ru}" FontSize="14" Foreground="Green" HorizontalAlignment="Center"/>
+                                        <TextBlock Text="{Binding Game.Title}" FontSize="12" FontWeight="Bold" Margin="10 5 5 0" HorizontalAlignment="Left" TextWrapping="Wrap"/>
+                                        <TextBlock Text="{Binding Game.Price, StringFormat=C, ConverterCulture=RU-ru}" Margin="10 5 0 5" FontSize="12" Foreground="Green" HorizontalAlignment="Left"/>
                                     </StackPanel>
                                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Grid.Column="1">
                                         <TextBlock VerticalAlignment="Center">
