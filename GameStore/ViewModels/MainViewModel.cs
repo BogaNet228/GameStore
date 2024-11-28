@@ -12,6 +12,8 @@ namespace GameStore.ViewModels
         public ObservableCollection<CartItem> CartItems { get; set; }
         public decimal TotalPrice => CartItems.Sum(game => game.TotalPrice);
 
+        public decimal Balance { get; set; } = 10_000;
+
         public ICommand AddToCartCommand { get; }
         public ICommand RemoveFromCartCommand { get; }
         public ICommand CheckoutCommand { get; }
@@ -20,7 +22,7 @@ namespace GameStore.ViewModels
         public MainViewModel()
         {
             using var context = new AppDbContext();
-            Games = new ObservableCollection<Game>(context.Games.Include(g=> g.Keys).ToList());
+            Games = new ObservableCollection<Game>(context.Games.Include(g => g.Keys).ToList());
 
             CartItems = new ObservableCollection<CartItem>();
             AddToCartCommand = new RelayCommand<Game>(AddToCart);
@@ -72,7 +74,8 @@ namespace GameStore.ViewModels
             context.SaveChanges();
 
             OnSendMessage(sb.ToString());
-
+            Balance -= TotalPrice;
+            OnPropertyChanged(nameof(Balance));
             CartItems.Clear();
             OnPropertyChanged(nameof(TotalPrice));
         }

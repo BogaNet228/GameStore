@@ -75,6 +75,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Margin="5">
                 <ItemsControl ItemsSource="{Binding CartItems}" >
@@ -124,6 +125,12 @@
                 </StackPanel>
                 <Button Content="Заказать"  Command="{Binding DataContext.CheckoutCommand, RelativeSource={RelativeSource AncestorType=Window}}" />
             </StackPanel>
+            <Border Grid.Column="2" BorderBrush="Green" BorderThickness="5" Grid.Row="2">
+                <StackPanel Grid.Row="2" >
+                    <TextBlock Text="Ваш баланс:" FontSize="14" Margin="5" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBlock Text="{Binding Balance, StringFormat=C, ConverterCulture=RU-ru}" FontSize="14" Foreground="Green" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Border>
         </Grid>
     </Grid>
 </Window>
