@@ -13,7 +13,7 @@ body:
      required: true #поле обязательно для заполнения
  
  - type: dropdown
-   id: id-input-field2
+   id: dropBoxLabel
    attributes:
     label: Приоритет дефекта
     description: Выбирите приоритет дефекта
@@ -30,7 +30,7 @@ body:
     Отобразить текст с разметкой markdown
    
  - type: checkboxes
-   id: идентификатор поля ввода
+   id: checkBoxLabel
    attributes:
     label: Вылет приложения
     description: Ошибка привела к вылету приложения?
