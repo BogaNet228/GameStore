@@ -62,8 +62,8 @@ body:
     label: Ошибка привела к вылету приложения?
     description: Закрывается ли приложение после возникновения ошибки?
     options:
-    - label: Да
-    - label: Нет
+     - label: Да
+     - label: Нет
       required: true #флажок обязателен или нет
 
   - type: textarea
