@@ -10,7 +10,7 @@ body:
     description: descriptionsOfBug
     placeholder: Описание дефекта и его возникновение.
    validations:
-     required: true #поле обязательно для заполнения
+    required: true #поле обязательно для заполнения
 
  - type: textarea
    id: expectation
@@ -19,7 +19,7 @@ body:
     description: Expected result
     placeholder: Описание ожидаемого результата.
    validations:
-     required: true #поле обязательно для заполнения
+    required: true #поле обязательно для заполнения
 
  - type: textarea
    id: reality
@@ -28,7 +28,7 @@ body:
     description: The actual result
     placeholder: Описание происходящего.
    validations:
-     required: true #поле обязательно для заполнения
+    required: true #поле обязательно для заполнения
  
  - type: dropdown
    id: Priority
@@ -61,8 +61,8 @@ body:
     label: Ошибка привела к вылету приложения?
     description: Закрывается ли приложение после возникновения ошибки?
     options:
-     - label: Да
-     - label: Нет
+    - label: Да
+    - label: Нет
       required: true #флажок обязателен или нет
 
   - type: textarea
