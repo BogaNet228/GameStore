@@ -29,7 +29,6 @@ body:
     placeholder: Описание происходящего.
    validations:
      required: true #поле обязательно для заполнения
-     
  
  - type: dropdown
    id: Priority
