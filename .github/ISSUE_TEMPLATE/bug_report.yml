@@ -72,4 +72,4 @@ body:
      description: Attachments
      placeholder: Если есть, вставьте сюда
     validations:
-     required: false #поле обязательно для заполнения
+     required: true #поле обязательно для заполнения
