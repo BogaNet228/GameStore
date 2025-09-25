@@ -1,4 +1,4 @@
-name:bug report
+name: bug report
 description: Отчёт о дефекте
 title: "[Ошибка]: "
 labels: ["bug"]
