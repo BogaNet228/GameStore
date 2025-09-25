@@ -6,33 +6,32 @@ body:
  - type: textarea
  id: id-input-field
  attributes:
- label: Название дефекта
- description: Описание дефекта
- placeholder: Описание возникновения дефекта
- validations:
- required: true #поле обязательно для заполнения
+  label: Название дефекта
+  description: Описание дефекта
+  placeholder: Описание возникновения дефекта
+  validations:
+   required: true #поле обязательно для заполнения
  
  - type: dropdown
  id: id-input-field2
  attributes:
- label: Приоритет дефекта
- description: Выбирите приоритет дефекта
- options:
- - Низкий
- - Средний
- - Высокий
+  label: Приоритет дефекта
+  description: Выбирите приоритет дефекта
+  options:
+   - Низкий
+   - Средний
+   - Высокий
  validations:
- required: true
+  required: true
  type: markdown
  attributes:
- value: |
- 
- Отобразить текст с разметкой markdown
+  value: |
+   Отобразить текст с разметкой markdown
  - type: checkboxes
  id: идентификатор поля ввода
  attributes:
- label: Вылет приложения
- description: Ошибка привела к вылету приложения?
- options:
- - label: Да
- required: true #флажок обязателен или нет
+  label: Вылет приложения
+  description: Ошибка привела к вылету приложения?
+  options:
+   - label: Да
+   required: true #флажок обязателен или нет
