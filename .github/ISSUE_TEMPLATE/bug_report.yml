@@ -23,11 +23,7 @@ body:
      - Высокий
    validations:
     required: true
-  
- - type: markdown
-   attributes:
-   value: |
-   
+ 
  - type: checkboxes
    id: checkBoxLabel
    attributes:
