@@ -7,13 +7,13 @@ body:
    id: bugLabel
    attributes:
     label: Название дефекта
-    description: descriptionBug
+    description: descriptionsOfBug
     placeholder: Описание возникновения дефекта
    validations:
      required: true #поле обязательно для заполнения
  
  - type: dropdown
-   id: dropBoxLabel
+   id: Priority
    attributes:
     label: Приоритет дефекта
     description: Выбирите приоритет дефекта
@@ -23,12 +23,26 @@ body:
      - Высокий
    validations:
     required: true
+
+     - type: dropdown
+   id: Seriousness
+   attributes:
+    label: Серьёзность дефекта
+    description: Выбирите серьёзность дефекта
+    options:
+     - Низкая 
+     - Средняя 
+     - Высокая 
+     - Критическая 
+   validations:
+    required: true
  
  - type: checkboxes
    id: checkBoxLabel
    attributes:
-    label: Вылет приложения
-    description: Ошибка привела к вылету приложения?
+    label: Ошибка привела к вылету приложения?
+    description: Закрывается ли приложение после возникновения ошибки?
     options:
     - label: Да
+    - label: Нет
       required: true #флажок обязателен или нет
