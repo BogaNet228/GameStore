@@ -36,4 +36,4 @@ body:
     description: Ошибка привела к вылету приложения?
     options:
     - label: Да
-     required: true #флажок обязателен или нет
+      required: true #флажок обязателен или нет
