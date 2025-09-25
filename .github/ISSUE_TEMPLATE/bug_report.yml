@@ -7,7 +7,7 @@ body:
    id: bugLabel
    attributes:
     label: Название дефекта.
-    description: descriptionsOfBug
+    description: DescriptionsOfBug
     placeholder: Описание дефекта и его возникновение.
    validations:
     required: true #поле обязательно для заполнения
