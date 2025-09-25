@@ -1,21 +1,40 @@
-name: bug report
-description: Отчёт о дефекте
+name: bug report.
+description: Отчёт о дефекте.
 title: "[Ошибка]: "
 labels: ["bug"]
 body:
  - type: textarea
    id: bugLabel
    attributes:
-    label: Название дефекта
+    label: Название дефекта.
     description: descriptionsOfBug
-    placeholder: Описание возникновения дефекта
+    placeholder: Описание дефекта и его возникновение.
    validations:
      required: true #поле обязательно для заполнения
+
+ - type: textarea
+   id: expectation
+   attributes:
+    label: Ожидаемый результат.
+    description: Expected result
+    placeholder: Описание ожидаемого результата.
+   validations:
+     required: true #поле обязательно для заполнения
+
+ - type: textarea
+   id: reality
+   attributes:
+    label: Фактический результат.
+    description: The actual result
+    placeholder: Описание происходящего.
+   validations:
+     required: true #поле обязательно для заполнения
+     
  
  - type: dropdown
    id: Priority
    attributes:
-    label: Приоритет дефекта
+    label: Приоритет дефекта.
     description: Выбирите приоритет дефекта
     options:
      - Низкий
@@ -27,8 +46,8 @@ body:
  - type: dropdown
    id: Seriousness
    attributes:
-    label: Серьёзность дефекта
-    description: Выбирите серьёзность дефекта
+    label: Серьёзность дефекта.
+    description: Выбирите серьёзность дефекта.
     options:
      - Низкая 
      - Средняя 
@@ -46,3 +65,12 @@ body:
     - label: Да
     - label: Нет
       required: true #флажок обязателен или нет
+
+  - type: textarea
+   id: additionally
+   attributes:
+    label: Вложения(Логи/Скриншоты)
+    description: Attachments
+    placeholder: Если есть, вставьте сюда
+   validations:
+     required: false #поле обязательно для заполнения
