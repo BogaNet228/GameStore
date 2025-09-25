@@ -66,10 +66,10 @@ body:
       required: true #флажок обязателен или нет
 
   - type: textarea
-   id: additionally
-   attributes:
-    label: Вложения(Логи/Скриншоты)
-    description: Attachments
-    placeholder: Если есть, вставьте сюда
-   validations:
+    id: additionally
+    attributes:
+     label: Вложения(Логи/Скриншоты)
+     description: Attachments
+     placeholder: Если есть, вставьте сюда
+    validations:
      required: false #поле обязательно для заполнения
