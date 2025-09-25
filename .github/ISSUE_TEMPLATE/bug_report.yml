@@ -24,18 +24,18 @@ body:
    validations:
     required: true
 
-     - type: dropdown
-       id: Seriousness
-       attributes:
-        label: Серьёзность дефекта
-        description: Выбирите серьёзность дефекта
-        options:
-         - Низкая 
-         - Средняя 
-         - Высокая 
-         - Критическая 
-       validations:
-        required: true
+ - type: dropdown
+   id: Seriousness
+   attributes:
+    label: Серьёзность дефекта
+    description: Выбирите серьёзность дефекта
+    options:
+     - Низкая 
+     - Средняя 
+     - Высокая 
+     - Критическая 
+   validations:
+    required: true
  
  - type: checkboxes
    id: checkBoxLabel
