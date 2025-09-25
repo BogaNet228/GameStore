@@ -11,24 +11,6 @@ body:
     placeholder: Описание дефекта и его возникновение.
    validations:
      required: true #поле обязательно для заполнения
-
- - type: textarea
-   id: expectation
-   attributes:
-    label: Ожидаемый результат.
-    description: Expected result
-    placeholder: Описание ожидаемого результата.
-   validations:
-     required: true #поле обязательно для заполнения
-
- - type: textarea
-   id: reality
-   attributes:
-    label: Фактический результат.
-    description: The actual result
-    placeholder: Описание происходящего.
-   validations:
-     required: true #поле обязательно для заполнения
  
  - type: dropdown
    id: Priority
