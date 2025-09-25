@@ -1,24 +1,26 @@
-name: название шаблона
-description: описание шаблона
+name: Отчёт о дефекте
+description: Отчёт для описания дефектов
 title: "[Ошибка]: "
 labels: ["bug"]
 body:
  - type: textarea
- id: идентификатор поля ввода
+ id: id-input-field
  attributes:
- label: подпись поля
- description: описание
- placeholder: подсказка
+ label: Название дефекта
+ description: Описание дефекта
+ placeholder: Описание возникновения дефекта
  validations:
  required: true #поле обязательно для заполнения
  - type: dropdown
- id: идентификатор поля ввода
+ id: id-input-field2
  attributes:
- label: подпись поля
- description: описание
+ label: Приоритет дефекта
+ description: Выбирите приоритет дефекта
  options:
- - список
- - опций
+ - Низкий
+ - Средний
+ - Высокий
+ - Ультра-высокий
  validations:
  required: true
  type: markdown
@@ -28,8 +30,8 @@ body:
  - type: checkboxes
  id: идентификатор поля ввода
  attributes:
- label: подпись
- description: описание
+ label: Вылет приложения
+ description: Ошибка привела к вылету приложения?
  options:
- - label: флажок 1
+ - label: Да
  required: true #флажок обязателен или нет
