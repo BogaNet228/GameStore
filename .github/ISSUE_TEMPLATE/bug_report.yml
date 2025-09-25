@@ -1,37 +1,39 @@
-name: Отчёт о дефекте
-description: Отчёт для описания дефектов
+name:bug report
+description: Отчёт о дефекте
 title: "[Ошибка]: "
 labels: ["bug"]
 body:
  - type: textarea
- id: id-input-field
- attributes:
-  label: Название дефекта
-  description: Описание дефекта
-  placeholder: Описание возникновения дефекта
-  validations:
-   required: true #поле обязательно для заполнения
+   id: bugLabel
+   attributes:
+    label: Название дефекта
+    description: descriptionBug
+    placeholder: Описание возникновения дефекта
+   validations:
+     required: true #поле обязательно для заполнения
  
  - type: dropdown
- id: id-input-field2
- attributes:
-  label: Приоритет дефекта
-  description: Выбирите приоритет дефекта
-  options:
-   - Низкий
-   - Средний
-   - Высокий
- validations:
-  required: true
- type: markdown
- attributes:
-  value: |
-   Отобразить текст с разметкой markdown
+   id: id-input-field2
+   attributes:
+    label: Приоритет дефекта
+    description: Выбирите приоритет дефекта
+    options:
+     - Низкий
+     - Средний
+     - Высокий
+   validations:
+    required: true
+  
+ - type: markdown
+   attributes:
+   value: |
+    Отобразить текст с разметкой markdown
+   
  - type: checkboxes
- id: идентификатор поля ввода
- attributes:
-  label: Вылет приложения
-  description: Ошибка привела к вылету приложения?
-  options:
-   - label: Да
-   required: true #флажок обязателен или нет
+   id: идентификатор поля ввода
+   attributes:
+    label: Вылет приложения
+    description: Ошибка привела к вылету приложения?
+    options:
+     - label: Да
+     required: true #флажок обязателен или нет
