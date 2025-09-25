@@ -16,7 +16,7 @@ body:
    id: expectation
    attributes:
     label: Ожидаемый результат.
-    description: Expected result
+    description: ExpectedResult
     placeholder: Описание ожидаемого результата.
    validations:
     required: true #поле обязательно для заполнения
@@ -25,7 +25,7 @@ body:
    id: reality
    attributes:
     label: Фактический результат.
-    description: The actual result
+    description: TheActualResult
     placeholder: Описание происходящего.
    validations:
     required: true #поле обязательно для заполнения
@@ -34,7 +34,7 @@ body:
    id: Priority
    attributes:
     label: Приоритет дефекта.
-    description: Выбирите приоритет дефекта
+    description: Выберите приоритет дефекта
     options:
      - Низкий
      - Средний
@@ -46,7 +46,7 @@ body:
    id: Seriousness
    attributes:
     label: Серьёзность дефекта.
-    description: Выбирите серьёзность дефекта.
+    description: Выберите серьёзность дефекта.
     options:
      - Низкая 
      - Средняя 
