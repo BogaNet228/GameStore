@@ -27,7 +27,6 @@ body:
  - type: markdown
    attributes:
    value: |
-    Отобразить текст с разметкой markdown
    
  - type: checkboxes
    id: checkBoxLabel
